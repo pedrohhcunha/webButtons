@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(130deg, rgb(64, 100, 100), rgb(23, 48, 40));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.btn .circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .5s;
+    transform: translate3d(0px, 0px, 0px);
+    transition: .2s;
+}
+.btn.active {
+    background-color: turquoise;
+}
+.btn.active .circle{
+    transform: translate3d(40px, 0px, 0px);
+}
